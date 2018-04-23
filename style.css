@@ -86,7 +86,8 @@ fieldset {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="number"] {
+input[type="number"],
+select {
     background-color: #eee;
     border: none;
     border-radius: 3px;
@@ -96,6 +97,7 @@ input[type="number"] {
     margin: 0;
     margin-bottom: 12px;
     padding: 15px;
+    color: rgba(128,128,128,0.5)
 }
 
 input[id="zipcode"] {
@@ -153,7 +155,6 @@ div p {
     -moz-appearance: none;
 }
 
-
 /* Hide the browser's default checkbox */
 .container input[type="radio"],
 .container input[type="checkbox"] {
@@ -182,7 +183,6 @@ div p {
     background-color: #eee;
     border-radius: 50%;
 }
-
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
@@ -274,7 +274,6 @@ input[type="radio"]:checked {
     border: 6px solid #2196F3;
 }
 
-
 button {
     color: white;
     background-color: black;
@@ -350,7 +349,7 @@ button {
 
     hr:nth-of-type(1),
     hr:nth-of-type(2) {
-        width: 61%;
+        width: 480px;
     }
 
     hr:nth-of-type(1) {
@@ -391,17 +390,20 @@ button {
     input[type="text"],
     input[type="email"],
     input[type="tel"],
-    input[id="state"] {
+    select {
         width: 73%;
         align-self: flex-end;
         margin-top: -45px;
+    }
+
+    select {
+        font-weight: bold;
     }
 
     input[id="zipcode"] {
         align-self: center;
         margin-top: -45px;
         margin-right: 83px;
- 
     }
 
     label[for="name"],
