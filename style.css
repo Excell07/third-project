@@ -9,6 +9,17 @@ body {
     color: rgba(68, 68, 68, 0.6);
 }
 
+/* Heading section */
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-header p {
+    color: #ccc;
+}
 
 h1 {
     display: flex;
@@ -20,6 +31,11 @@ h1 {
     font-size: 1.2em;
     background-color: rgba(41, 67, 71, 1);
     color: white;
+}
+
+h2 {
+    margin-bottom: -5px;
+    margin-top: 25px;
 }
 
 hr {
@@ -35,26 +51,21 @@ hr + hr {
     background-color: #000;
 }
 
+/* Form section */
+form {
+    margin-bottom: 200px;
+}
+
 form hr {
     height: 3px;
     margin-bottom: 22px;
     margin-top: -33px;
 }
 
-
-.main-header p {
-    color: #ccc;
-}
-
 h2, legend {
     font-size: 1.3em;
     font-weight: bolder;
     color: rgba(0, 0, 0, 0.8);
-}
-
-h2 {
-    margin-bottom: -5px;
-    margin-top: 25px;
 }
 
 fieldset:not(.news) legend {
@@ -71,18 +82,7 @@ fieldset {
     border: none;
 }
 
-.main-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-form {
-    margin-bottom: 200px;
-}
-
-
+/* style input & label element */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -252,9 +252,7 @@ input[type="radio"] {
     -moz-appearance: none;
 }
 
-
 /* between checkbox and radio attribute */
-
 label {
     margin-right: 15px;
     line-height: 32px;
@@ -277,7 +275,7 @@ input[type="radio"]:checked {
 }
 
 
-  button {
+button {
     color: white;
     background-color: black;
     padding: 5px 10px;
@@ -286,13 +284,13 @@ input[type="radio"]:checked {
     font-size: 14px;
   }
   
-  button:hover,
-  button:focus {
+button:hover,
+button:focus {
     color: #999;
     cursor: pointer;
   }
   
-  button:active {
+button:active {
     background-color: white;
     color: black;
     outline: 1px solid black;
@@ -323,12 +321,13 @@ button {
     color: rgba(153, 153, 153, 0.8);
 }
 
+/* Tablet or Desktop screensize */
+
 @media (min-width: 769px) {
    
     form {
         max-width: 500px;
         margin: 0 auto 200px; 
-
     }
 
     h1 {
@@ -415,6 +414,5 @@ button {
         width: 25%;
         color: rgba(41, 67, 71, 0.6);
         font-weight: bold;
-    }
-    
+    } 
 }
