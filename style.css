@@ -78,6 +78,10 @@ label[for="name"] {
     margin-top: 20px;
 }
 
+label[for="news_format"] {
+    margin-bottom: 10px;
+}
+
 fieldset {
     border: none;
 }
@@ -108,7 +112,8 @@ input[placeholder="required"] {
     text-align: right;
 }
 
-input:focus {
+input:focus,
+select:focus {
     outline-color: darkblue;
 }
 
@@ -301,6 +306,7 @@ textarea {
     resize: none;
     height: 100px;
     width: 100%;
+    margin-top: 7px;
     background-color: #eee;
 }
 
@@ -374,7 +380,7 @@ button {
         margin-bottom: 1px;
     }
 
-    .news p:last-child{
+    .news p:last-child {
         color: rgba(153, 153, 153, 0.8);
     }
 
@@ -398,6 +404,7 @@ button {
 
     select {
         font-weight: bold;
+        /* outline: red; */
     }
 
     input[id="zipcode"] {
