@@ -108,17 +108,15 @@ input[id="zipcode"] {
     width: 135px;
 }
 
-input[placeholder="required"] {
-    text-align: right;
-}
-
 input:focus,
 select:focus {
     outline-color: darkblue;
+    color: black;
 }
 
 input::placeholder {
     color: #bbb;
+    text-align: right;
 }
 
 label[for="name"],
@@ -404,7 +402,6 @@ button {
 
     select {
         font-weight: bold;
-        /* outline: red; */
     }
 
     input[id="zipcode"] {
