@@ -6,6 +6,7 @@ body {
     font-family: 'Merriweather', serif;
     font-size: 14px;
     margin: 0;
+    background-color: whitesmoke;
     color: rgba(68, 68, 68, 0.6);
 }
 
@@ -54,6 +55,7 @@ hr + hr {
 /* Form section */
 form {
     margin-bottom: 200px;
+    background-color: white;
 }
 
 form hr {
@@ -108,15 +110,44 @@ input[id="zipcode"] {
     width: 135px;
 }
 
-input:focus,
-select:focus {
-    outline-color: darkblue;
-    color: black;
+/* Turn Off Number Input Spinners */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Transition section */
+input {
+    -webkit-transition: 3s ease-in-out .1s; 
+    -moz-transition: 3s ease-in-out .1s;             
+    transition: 3s ease-in-out .1s;             
+}
+
+input:focus {
+    background-color: white;
 }
 
 input::placeholder {
     color: #bbb;
     text-align: right;
+}
+
+select:focus {
+    outline-color: darkblue;
+    color: black;
+}
+
+input:focus::placeholder,
+input:focus
+ {
+    outline-color: darkblue;
+    color: blue;
+}
+
+
+input:focus {
+    color: black;
 }
 
 label[for="name"],
@@ -267,7 +298,6 @@ input[type="radio"] {
     width: 16px;
     height: 16px;
     border: 2px solid #999;
-    transition: 0.2s all linear;
     outline: none;
     position: relative;
     top: 4px;
@@ -305,6 +335,7 @@ textarea {
     height: 100px;
     width: 100%;
     margin-top: 7px;
+    outline-color: darkblue;
     background-color: #eee;
 }
 
@@ -330,7 +361,8 @@ button {
    
     form {
         max-width: 500px;
-        margin: 0 auto 200px; 
+        margin: 0 auto 200px;
+        /* background-color: white;  */
     }
 
     h1 {
